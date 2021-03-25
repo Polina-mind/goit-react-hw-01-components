@@ -1,7 +1,7 @@
 import React from "react";
 import Profile from "./components/Profile";
 import user from "./user.json";
-// import './App.css';
+import "./App.css";
 
 const App = () => {
   return (
