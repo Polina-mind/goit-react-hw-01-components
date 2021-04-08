@@ -1,3 +1,37 @@
-.App {
+.profile {
   text-align: center;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.tag,
+.location {
+  color: grey;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.stats li {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: grey;
+}
+
+.quantity {
+  font-size: 16px;
+  font-weight: 700;
 }
