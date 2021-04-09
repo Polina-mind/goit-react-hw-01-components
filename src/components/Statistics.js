@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Statistics = (title, { stats }) => {
+  console.log(stats);
   return (
     <section className="statistics">
       <h2 className="title">{title && title}</h2>
