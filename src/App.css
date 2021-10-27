@@ -26,6 +26,7 @@ body {
 
 .transaction-history {
   background-color: rgb(241, 237, 237);
+  box-shadow: none;
 }
 
 .title {
@@ -128,13 +129,22 @@ body {
   width: 80px;
 }
 
-.transaction-history td {
-  padding: 10px;
+.transactions {
+  background-color: rgb(255, 255, 255);
+  border: solid 1px rgb(219, 219, 219);
 }
 
-.thead {
+.transaction-history td {
+  padding: 10px;
+  border: solid 1px rgb(151, 149, 149);
+  width: 100px;
+}
+
+.transaction-history .thead {
   padding-top: 10px;
   padding-bottom: 10px;
+  background-color: rgb(187, 208, 211);
+  border: solid 1px rgb(151, 149, 149);
 }
 
 table thead {
