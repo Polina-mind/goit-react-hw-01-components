@@ -7,11 +7,9 @@ const FriendList = ({ friends }) => {
       <ul className="friend-list">
         {friends.map(({ id, isOnline, avatar, name }) => (
           <li className="item" key={id}>
-            {isOnline ? (
-              <span className="status-green">{isOnline}</span>
-            ) : (
-              <span className="status-red">{isOnline}</span>
-            )}
+            <span className={isOnline ? 'status-green' : 'status-red'}>
+              {isOnline}
+            </span>
 
             <img className="avatar" src={avatar} alt="" width="48" />
             <p className="name">{name}</p>
