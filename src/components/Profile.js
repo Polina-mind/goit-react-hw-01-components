@@ -1,5 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
+
+import defaultAvatar from './avatar.jpg';
 
 const Profile = ({ avatar, name, tag, location, followers, views, likes }) => {
   return (
@@ -12,15 +14,15 @@ const Profile = ({ avatar, name, tag, location, followers, views, likes }) => {
       </div>
 
       <ul className="stats">
-        <li>
+        <li className="stats-item">
           <span className="label">Followers</span>
           <span className="quantity">{followers}</span>
         </li>
-        <li>
+        <li className="stats-item">
           <span className="label">Views</span>
           <span className="quantity">{views}</span>
         </li>
-        <li>
+        <li className="stats-item">
           <span className="label">Likes</span>
           <span className="quantity">{likes}</span>
         </li>
@@ -37,6 +39,10 @@ Profile.propTypes = {
   followers: PropTypes.number.isRequired,
   views: PropTypes.number.isRequired,
   likes: PropTypes.number.isRequired,
+};
+
+Profile.defaultProps = {
+  avatar: defaultAvatar,
 };
 
 export default Profile;

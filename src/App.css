@@ -5,9 +5,11 @@ body {
 
 .profile,
 .statistics,
-.transaction-history {
+.transaction-history,
+.transactions {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
 
   width: 350px;
   text-align: center;
@@ -16,6 +18,14 @@ body {
   border: solid 1px rgb(219, 219, 219);
   border-radius: 4px;
   box-shadow: 1px 1px 1px 1px rgb(219, 219, 219);
+}
+
+.stats-item {
+  width: calc(348px / 3);
+}
+
+.transaction-history {
+  background-color: rgb(241, 237, 237);
 }
 
 .title {
@@ -48,10 +58,16 @@ body {
 }
 
 .item {
-  margin-right: 15px;
-  margin-left: 15px;
+  margin-right: 5px;
+  margin-left: 5px;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.stat-item {
+  width: 70px;
+  height: 70px;
+  text-align: center;
 }
 
 .avatar {
@@ -62,10 +78,11 @@ body {
 
 .label {
   display: block;
-  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
   font-size: 14px;
-  color: grey;
+  color: rgb(73, 73, 73);
 }
 
 .quantity {
@@ -90,7 +107,7 @@ body {
 
 .status-green::before,
 .status-red::before {
-  content: "";
+  content: '';
   display: block;
 
   margin-left: 20px;

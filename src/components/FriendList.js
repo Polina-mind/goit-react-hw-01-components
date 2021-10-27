@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const FriendList = ({ friends }) => {
   return (
@@ -22,14 +22,14 @@ const FriendList = ({ friends }) => {
   );
 };
 
-FriendList.protoTypes = {
+FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
       isOnline: PropTypes.bool.isRequired,
       avatar: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
-    })
+    }),
   ).isRequired,
 };
 
